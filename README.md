@@ -20,6 +20,4 @@ On comparing given probability function with Gaussian probability density functi
 2. mean is calculated as summation of all z divided by number of samples.
 3. Using MLE for: p(z)=root(lambda/pi)*e^(-lambda*(z-mean)^2), the MLE solution is lambda=n/(2*sum((z-mean)^2))
    
-lambda=0.0015168996020347414
-mean=25.80791010190819
-c=0.02197371474457416
+lambda=0.0015168996020347414, mean=25.80791010190819, c=0.02197371474457416
