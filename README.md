@@ -11,7 +11,7 @@ For each sampling method, each model is selected, StandardScaler() is used to no
 For each sampling method, mean accuracy is calculated by taking average of all 5 model accuracies.
 The sampling method getting the highest mean accuracy is considered best. Best technique results may change when different samples are choosen.
 
-#Probability Density Functions
+# Probability Density Functions
 For r=102317125, ar=0.05 and br=0.3
 Transformation is done using z=x+ar*sin(br*x), where x is NO2 column of India Air Quality dataset.
 
