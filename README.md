@@ -11,3 +11,15 @@ For each sampling method, each model is selected, StandardScaler() is used to no
 For each sampling method, mean accuracy is calculated by taking average of all 5 model accuracies.
 The sampling method getting the highest mean accuracy is considered best. Best technique results may change when different samples are choosen.
 
+#Probability Density Functions
+For r=102317125, ar=0.05 and br=0.3
+Transformation is done using z=x+ar*sin(br*x), where x is NO2 column of India Air Quality dataset.
+
+On comparing given probability function with Gaussian probability density function:
+1. The area under the curve over all values of z must be one. Therefore, c=root(lambda/pi)
+2. mean is calculated as summation of all z divided by number of samples.
+3. Using MLE for: p(z)=root(lambda/pi)*e^(-lambda*(z-mean)^2), the MLE solution is lambda=n/(2*sum((z-mean)^2))
+   
+lambda=0.0015168996020347414
+mean=25.80791010190819
+c=0.02197371474457416
