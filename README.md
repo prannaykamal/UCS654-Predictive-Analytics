@@ -21,3 +21,12 @@ On comparing given probability function with Gaussian probability density functi
 3. Using MLE for: p(z)=root(lambda/pi)*e^(-lambda*(z-mean)^2), the MLE solution is lambda=n/(2*sum((z-mean)^2))
    
 lambda=0.0014603894854064846, mean=25.80791010190818, c=0.021560529002873346
+
+TRAINING
+The code runs for epochs=5000 with batch size=64.
+Discriminator: Distinguishes between real and fake samples using Binary Cross Entropy loss.
+Generator: Tries to create better fake data to fool the Discriminator. As training progresses, the Generator becomes highly skilled at mimicking the statistical properties of the original NO2 data.
+
+VISUALIZATION
+Sampling generates 10,000 samples from the trained Generator.
+Plots a histogram for both the real and fake data.
