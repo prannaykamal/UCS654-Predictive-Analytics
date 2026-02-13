@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mashup Service</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 50px; }
+        table { border: 1px solid #ccc; padding: 20px; }
+        td { padding: 5px; }
+        .submit-btn { background-color: orange; border: 1px solid #000; padding: 5px 15px; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+    <form method="POST" action="/mashup">
+        <table>
+            <tr>
+                <td>Singer Name</td>
+                <td><input type="text" name="singer" required></td>
+            </tr>
+            <tr>
+                <td># of videos</td>
+                <td><input type="number" name="count" required></td>
+            </tr>
+            <tr>
+                <td>duration of each video</td>
+                <td><input type="number" name="duration" required></td>
+            </tr>
+            <tr>
+                <td>Email Id</td>
+                <td><input type="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <button type="submit" class="submit-btn">Submit</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
