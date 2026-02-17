@@ -6,7 +6,7 @@ In order to determine the final ranking, it computes a performance score Pi = Sw
 
 # Part-2
 This step involves using Twine to upload the TOPSIS logic to PyPI after it has been transformed into a distributable Python package.
-With just one command—topsis <InputDataFile> <Weights> <Impacts> <OutputResultFileName>
+With just one command - topsis <InputDataFile> <Weights> <Impacts> <OutputResultFileName>
 users can perform the analysis thanks to the package's user-friendly Command Line Interface (CLI).
 To ensure that the input file exists, has at least three columns, and that the number of weights and impacts equals the number of criteria columns, the script incorporates strong error handling.
 
