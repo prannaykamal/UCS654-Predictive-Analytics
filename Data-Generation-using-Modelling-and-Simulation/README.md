@@ -1,14 +1,12 @@
 # Data Generation using Modelling and Simulation for Machine Learning
 
-## 📌 Overview
+## Overview
 
 This project demonstrates how modelling and simulation can be used to generate synthetic datasets for Machine Learning. A simulation environment was explored, relevant parameters were studied, 1000 simulations were generated, and multiple Machine Learning models were trained and compared using evaluation metrics.
 
 The complete implementation was developed using **Python** in **Google Colab**, and the results are available in this repository.
 
----
-
-## 🧪 Step 1: Selection of Simulation Tool
+## Step 1: Selection of Simulation Tool
 
 After exploring the list of computer simulation software from Wikipedia, multiple tools such as NetLogo, SimPy, ns-3 and OpenFOAM were studied.
 
@@ -21,9 +19,8 @@ After exploring the list of computer simulation software from Wikipedia, multipl
 
 Engineering simulators like OpenFOAM and ns-3 were analyzed but avoided due to heavy installation requirements and higher complexity for this assignment.
 
----
 
-## ⚙️ Step 2: Installation and Exploration
+## Step 2: Installation and Exploration
 
 The Gymnasium simulator was installed using pip inside Google Colab.
 
@@ -39,9 +36,8 @@ The action space consists of two actions:
 * 0 → Push cart left
 * 1 → Push cart right
 
----
 
-## 📊 Step 3: Parameter Study
+## Step 3: Parameter Study
 
 The following lower and upper bounds were used to generate random simulation inputs:
 
@@ -54,9 +50,8 @@ The following lower and upper bounds were used to generate random simulation inp
 
 Random values were generated within these bounds to create diverse simulation states.
 
----
 
-## 🔁 Step 4 & Step 5: Data Generation using Simulation
+## Step 4 & Step 5: Data Generation using Simulation
 
 A total of **1000 simulations** were executed.
 
@@ -79,15 +74,14 @@ A total of **1000 simulations** were executed.
 
 **Note:** The reward value remained constant during simulation, therefore the Machine Learning task focused on predicting the **action** instead of reward.
 
----
 
-## 🤖 Step 6: Machine Learning Model Comparison
+## Step 6: Machine Learning Model Comparison
 
-### 🎯 Objective
+### Objective
 
 Predict the **action** taken using simulation parameters.
 
-### 🧠 Models Used
+### Models Used
 
 * Logistic Regression
 * Decision Tree Classifier
@@ -95,13 +89,13 @@ Predict the **action** taken using simulation parameters.
 * K-Nearest Neighbors (KNN)
 * Support Vector Machine (SVM)
 
-### 📏 Evaluation Metric
+### Evaluation Metric
 
 * Accuracy Score
 
 ---
 
-## 📋 Result Comparison Table
+## Result Comparison Table
 
 | Model               | Accuracy |
 | ------------------- | -------- |
@@ -113,23 +107,17 @@ Predict the **action** taken using simulation parameters.
 
 The table shows the accuracy obtained after training different Machine Learning models on the generated simulation dataset.
 
----
-
-## 📈 Result Graph
+## Result Graph
 
 ![Model Comparison Graph](model_comparison.png)
 
 **Figure 1:** Accuracy comparison between Machine Learning models trained on simulation data.
 
----
-
-## 🏆 Best Model
+## Best Model
 
 Based on the comparison results, **Random Forest** achieved the highest accuracy and performed best on the generated simulation dataset.
 
----
-
-## 🧾 Installation
+## Installation
 
 To run this project locally:
 
@@ -137,9 +125,7 @@ To run this project locally:
 pip install -r requirements.txt
 ```
 
----
-
-## 📂 Project Structure
+## Project Structure
 
 ```
 Simulation-ML-Assignment
@@ -151,10 +137,8 @@ Simulation-ML-Assignment
 └── README.md
 ```
 
----
 
-## 🧾 Conclusion
+## Conclusion
 
 This project demonstrates how modelling and simulation can be used to generate synthetic datasets for Machine Learning applications. By executing 1000 simulations using the CartPole environment, a structured dataset was created and multiple ML models were trained and evaluated. The comparison table and graph help identify the best performing model and highlight the usefulness of simulation-generated data.
 
----
