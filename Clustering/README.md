@@ -1,42 +1,37 @@
 # Clustering Assignment
 
-## 📌 Objective
+## Objective
 To perform a comparative performance study of different clustering algorithms using different preprocessing techniques and varying number of clusters.
 
----
 
-## 📊 Dataset
+## Dataset
 - Iris Dataset (from sklearn / UCI Repository)
 - Total Samples: 150
 - Features: 4
 
----
 
-## ⚙️ Algorithms Used
+## Algorithms Used
 1. K-Means Clustering
 2. Hierarchical Clustering (Agglomerative)
 3. Mean Shift Clustering
 
----
 
-## 🔄 Preprocessing Techniques
+## Preprocessing Techniques
 - No Data Processing
 - Normalization (StandardScaler)
 - PCA (Principal Component Analysis)
 - Normalization + PCA
 
----
 
-## 📏 Evaluation Metrics
+## Evaluation Metrics
 - Silhouette Score (Higher is better)
 - Calinski-Harabasz Score (Higher is better)
 - Davies-Bouldin Score (Lower is better)
 
----
 
-## 📊 Results
+## Results
 
-### 🔹 K-Means Clustering
+### K-Means Clustering
 
 | Clusters | Preprocessing | Silhouette | Calinski-Harabasz | Davies-Bouldin |
 |---------|--------------|------------|-------------------|----------------|
@@ -55,9 +50,8 @@ To perform a comparative performance study of different clustering algorithms us
 | 5 | PCA | 0.545 | 683.67 | 0.648 |
 | 5 | Norm + PCA | 0.425 | 274.81 | 0.753 |
 
----
 
-### 🔹 Hierarchical Clustering
+###  Hierarchical Clustering
 
 | Clusters | Preprocessing | Silhouette | Calinski-Harabasz | Davies-Bouldin |
 |---------|--------------|------------|-------------------|----------------|
@@ -76,9 +70,8 @@ To perform a comparative performance study of different clustering algorithms us
 | 5 | PCA | 0.548 | 665.88 | 0.652 |
 | 5 | Norm + PCA | 0.404 | 254.99 | 0.791 |
 
----
 
-### 🔹 Mean Shift Clustering
+### Mean Shift Clustering
 
 | Preprocessing | Silhouette | Calinski-Harabasz | Davies-Bouldin |
 |--------------|------------|-------------------|----------------|
@@ -87,39 +80,19 @@ To perform a comparative performance study of different clustering algorithms us
 | PCA | 0.710 | 565.73 | 0.355 |
 | Norm + PCA | 0.614 | 283.00 | 0.543 |
 
----
 
-## 📈 Visualization
+## Visualization
 
 Example of K-Means clustering using PCA:
 
-![KMeans Graph](kmeans_pca.png)
-
----
-
-## 📌 Observations
+## Observations
 - PCA significantly improves clustering performance
 - Mean Shift gives highest silhouette score in many cases
 - Normalization alone sometimes reduces performance
 - Best results are generally obtained using PCA
 
----
-
-## 📊 Conclusion
+## Conclusion
 - PCA is the most effective preprocessing technique
 - Mean Shift performs best overall without specifying clusters
 - K-Means and Hierarchical give similar results
 - Number of clusters affects performance significantly
-
----
-
-## 🚀 How to Run
-1. Open the notebook in Google Colab
-2. Run all cells
-3. View output and graphs
-
----
-
-## 👨‍💻 Author
-* Name - Manmeet Singh 
-* Roll no - 102317039
