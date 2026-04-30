@@ -117,27 +117,6 @@ The table shows the accuracy obtained after training different Machine Learning 
 
 Based on the comparison results, **Random Forest** achieved the highest accuracy and performed best on the generated simulation dataset.
 
-## Installation
-
-To run this project locally:
-
-```bash
-pip install -r requirements.txt
-```
-
-## Project Structure
-
-```
-Simulation-ML-Assignment
-│
-├── Data_Generation_Simulation.ipynb
-├── simulation_data.csv
-├── model_comparison.png
-├── requirements.txt
-└── README.md
-```
-
-
 ## Conclusion
 
 This project demonstrates how modelling and simulation can be used to generate synthetic datasets for Machine Learning applications. By executing 1000 simulations using the CartPole environment, a structured dataset was created and multiple ML models were trained and evaluated. The comparison table and graph help identify the best performing model and highlight the usefulness of simulation-generated data.
