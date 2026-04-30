@@ -61,21 +61,6 @@ The objective of this assignment is to optimize a Support Vector Machine (SVM) m
 * The model converges to near-optimal accuracy
 
 
-## How to Run
-
-```bash id="run123"
-pip install pandas numpy scikit-learn matplotlib optuna
-python main.py
-```
-
-
-## Output Files
-
-* `results.csv` → Performance comparison table
-* `convergence.png` → Convergence graph
-
----
-
 ## Conclusion
 
 * SVM achieves high accuracy on this dataset
