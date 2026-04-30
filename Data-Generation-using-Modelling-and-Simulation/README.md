@@ -19,7 +19,6 @@ After exploring the list of computer simulation software from Wikipedia, multipl
 
 Engineering simulators like OpenFOAM and ns-3 were analyzed but avoided due to heavy installation requirements and higher complexity for this assignment.
 
-
 ## Step 2: Installation and Exploration
 
 The Gymnasium simulator was installed using pip inside Google Colab.
