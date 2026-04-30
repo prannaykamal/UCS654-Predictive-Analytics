@@ -1,20 +1,18 @@
-# 📊 Optimized SVM on Multi-Class Dataset
+# Optimized SVM on Multi-Class Dataset
 
-## 📌 Objective
+## Objective
 
 The objective of this assignment is to optimize a Support Vector Machine (SVM) model on a multi-class dataset using multiple samples and evaluate its performance.
 
----
 
-## 📁 Dataset
+## Dataset
 
 * Dataset used: Wine Dataset (multi-class classification)
 * Number of features: 13
 * Number of classes: 3
 
----
 
-## ⚙️ Methodology
+## Methodology
 
 1. **Data Preprocessing**
 
@@ -39,9 +37,8 @@ The objective of this assignment is to optimize a Support Vector Machine (SVM) m
      * `gamma`
      * `kernel` (linear, rbf, poly)
 
----
 
-## 📊 Results Table
+## Results Table
 
 | Sample | Accuracy | Kernel | C         | Gamma    |
 | ------ | -------- | ------ | --------- | -------- |
@@ -56,47 +53,34 @@ The objective of this assignment is to optimize a Support Vector Machine (SVM) m
 | S9     | 0.9815   | rbf    | 44.894347 | 0.002177 |
 | S10    | 1.0000   | poly   | 19.662932 | 0.043765 |
 
----
 
-## 📈 Convergence Graph
-
-Below is the convergence graph for the best-performing sample:
-
-![Convergence Graph](convergence.png)
-
-### 🔍 Observation:
+### Observation:
 
 * Accuracy increases with iterations
 * Some fluctuations occur due to parameter exploration
 * The model converges to near-optimal accuracy
 
----
 
-## ▶️ How to Run
+## How to Run
 
 ```bash id="run123"
 pip install pandas numpy scikit-learn matplotlib optuna
 python main.py
 ```
 
----
 
-## 📂 Output Files
+## Output Files
 
 * `results.csv` → Performance comparison table
 * `convergence.png` → Convergence graph
 
 ---
 
-## 🧠 Conclusion
+## Conclusion
 
 * SVM achieves high accuracy on this dataset
 * Hyperparameter tuning improves performance significantly
 * Different kernels perform well depending on sample
 * RBF and Polynomial kernels often give best results
 
----
 
-## 👨‍🎓 Student Details
-* Name - Manmeet Singh
-* Roll no - 102317039
