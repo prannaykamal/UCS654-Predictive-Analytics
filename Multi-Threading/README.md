@@ -1,12 +1,10 @@
 # Matrix Multiplication using Multithreading (CPU)
 
-## 📌 Objective
+## Objective
 
 To analyze the performance of matrix multiplication using multiple threads and observe how execution time varies with increasing number of threads.
 
----
-
-## ⚙️ Tools & Technologies
+## Tools & Technologies
 
 * Python
 * NumPy (for matrix operations)
@@ -14,9 +12,7 @@ To analyze the performance of matrix multiplication using multiple threads and o
 * Matplotlib (for plotting graph)
 * Psutil (for CPU usage monitoring)
 
----
-
-## 🧠 Methodology
+## Methodology
 
 1. A constant matrix of size **1200 × 1200** is generated.
 2. For each iteration:
@@ -28,9 +24,7 @@ To analyze the performance of matrix multiplication using multiple threads and o
 5. Execution time is recorded for each case.
 6. A graph is plotted: **Threads vs Execution Time**.
 
----
-
-## 📊 Result Table
+## Result Table
 
 | Threads | Time (minutes) |
 | ------- | -------------- |
@@ -59,23 +53,11 @@ To analyze the performance of matrix multiplication using multiple threads and o
 | 23      | 0.250          |
 | 24      | 0.273          |
 
----
-
-## 📈 Graph
-
-The graph shows the relationship between number of threads and execution time.
-
-![Execution Graph](execution_time.png)
-
----
-
 ## 🖥 CPU Usage
 
 CPU usage was monitored using `psutil`, showing how workload is distributed across cores.
 
----
-
-## ⚠️ System Constraints
+## System Constraints
 
 Due to hardware limitations (16 GB RAM), the experiment was conducted with:
 
@@ -84,21 +66,11 @@ Due to hardware limitations (16 GB RAM), the experiment was conducted with:
 
 The implementation is scalable to larger sizes (e.g., 5000 × 5000).
 
----
-
-## 🔍 Observations
+## Observations
 
 * Execution time initially decreases from 1 to 2 threads.
 * After a certain point, execution time **increases** with more threads.
 
----
-
-## 🎯 Conclusion
+## Conclusion
 
 Increasing the number of threads does not always improve performance. Beyond an optimal number of threads, execution time increases due to system overhead and resource contention.
-
----
-
-## 👨‍🎓 Author
-
-Manmeet
